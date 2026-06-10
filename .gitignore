@@ -1,0 +1,12 @@
+# Claude Code
+.claude/
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Arquivos de rascunho
+code.html
+DESIGN.md
+screen.png
