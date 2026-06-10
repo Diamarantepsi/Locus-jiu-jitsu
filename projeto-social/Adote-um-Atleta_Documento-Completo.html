@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projeto Adote um Atleta | Documento Institucional (ABNT) | LACUS Brazilian Jiu-Jitsu</title>
+<style>
+  /* Formatação conforme ABNT NBR 14724 (trabalhos acadêmicos), NBR 6024 (numeração
+     progressiva), NBR 10520 (citações) e NBR 6023 (referências):
+     fonte Times New Roman 12pt, espaçamento 1,5, parágrafo com recuo de 1,25cm,
+     texto justificado, margens 3cm (sup./esq.) e 2cm (inf./dir.). */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    color: #000;
+    background: #e8e8e8;
+    line-height: 1.5;
+  }
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30mm 20mm 20mm 30mm;
+  }
+  @media print {
+    body { background: #fff; }
+    .page { max-width: none; padding: 0; }
+    @page { size: A4; margin: 30mm 20mm 20mm 30mm; }
+    .quebra { page-break-after: always; }
+    h2 { page-break-after: avoid; }
+    .no-break { page-break-inside: avoid; }
+  }
+  p {
+    text-align: justify;
+    text-indent: 1.25cm;
+    margin-bottom: 0;
+  }
+  p + p, p + ul, ul + p, p + ol, ol + p, table + p, p + table { margin-top: 6pt; }
+
+  /* Seções primárias: caixa alta, negrito (NBR 6024) */
+  h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 18pt 0 12pt;
+  }
+  /* Seções secundárias: caixa alta sem negrito não é regra fixa;
+     adotado: negrito apenas em itálico para terciárias */
+  h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: none;
+    margin: 14pt 0 8pt;
+  }
+  ul, ol { margin-left: 1.25cm; margin-bottom: 6pt; }
+  li { text-align: justify; margin-bottom: 3pt; }
+
+  /* Capa e folha de rosto */
+  .capa, .folha-rosto {
+    text-align: center;
+    min-height: 250mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10mm 0;
+  }
+  .capa .inst { text-transform: uppercase; font-weight: bold; }
+  .capa .titulo, .folha-rosto .titulo {
+    text-transform: uppercase; font-weight: bold; font-size: 14pt;
+  }
+  .nat { font-size: 11pt; text-align: justify; margin-left: 50%; text-indent: 0; }
+
+  /* Resumo */
+  .resumo p { text-indent: 0; }
+  .palavras { margin-top: 12pt; }
+
+  /* Sumário */
+  .sumario { line-height: 2; }
+  .sumario .item { display: flex; }
+  .sumario .pts { flex: 1; border-bottom: 1px dotted #000; margin: 0 4px 5px; }
+
+  /* Tabelas (padrão IBGE/ABNT: sem bordas verticais) */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11pt;
+    margin: 8pt 0;
+    border-top: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+  }
+  th {
+    font-weight: bold;
+    text-align: left;
+    padding: 4pt 6pt;
+    border-bottom: 1px solid #000;
+  }
+  td { padding: 4pt 6pt; vertical-align: top; }
+  .fonte-tab { font-size: 10pt; text-indent: 0; margin-top: 2pt; }
+  .titulo-tab { font-size: 11pt; text-indent: 0; margin-bottom: 2pt; font-weight: bold; }
+
+  /* Citação longa (NBR 10520): recuo 4cm, fonte 10pt, espaçamento simples */
+  .citacao {
+    margin: 10pt 0 10pt 4cm;
+    font-size: 10pt;
+    line-height: 1.0;
+    text-align: justify;
+    text-indent: 0;
+  }
+
+  /* Referências (NBR 6023): alinhadas à esquerda, espaçamento simples,
+     separadas por linha em branco */
+  .referencias p {
+    text-indent: 0;
+    text-align: left;
+    line-height: 1.0;
+    margin-bottom: 10pt;
+  }
+  a { color: #000; text-decoration: none; word-break: break-all; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ================= CAPA ================= -->
+  <div class="capa quebra">
+    <div>
+      <p class="inst" style="text-indent:0; text-align:center;">LACUS BRAZILIAN JIU-JITSU<br/>NÚCLEO DE PROJETOS SOCIAIS</p>
+    </div>
+    <div>
+      <p class="titulo" style="text-indent:0; text-align:center;">PROJETO ADOTE UM ATLETA:<br/>O JIU-JITSU COMO INSTRUMENTO DE DESENVOLVIMENTO INTEGRAL DE CRIANÇAS E ADOLESCENTES DO BAIRRO SANTA LÚCIA, EM MACEIÓ, ALAGOAS</p>
+    </div>
+    <div>
+      <p style="text-indent:0; text-align:center;">MACEIÓ<br/>2026</p>
+    </div>
+  </div>
+
+  <!-- ================= FOLHA DE ROSTO ================= -->
+  <div class="folha-rosto quebra">
+    <div>
+      <p style="text-indent:0; text-align:center; font-weight:bold;">LACUS BRAZILIAN JIU-JITSU</p>
+    </div>
+    <div>
+      <p class="titulo" style="text-indent:0; text-align:center;">PROJETO ADOTE UM ATLETA</p>
+      <p style="text-indent:0; text-align:center; margin-top:8pt;">Versão 1.1, junho de 2026</p>
+    </div>
+    <div>
+      <p class="nat">Projeto social de apadrinhamento esportivo apresentado a pessoas físicas e jurídicas interessadas em financiar a formação esportiva, educacional e cidadã de crianças e adolescentes em situação de vulnerabilidade social no bairro Santa Lúcia, em Maceió, Alagoas.</p>
+    </div>
+    <div>
+      <p style="text-indent:0; text-align:center;">Contato: +55 82 99692-5204<br/>MACEIÓ<br/>2026</p>
+    </div>
+  </div>
+
+  <!-- ================= RESUMO ================= -->
+  <div class="resumo quebra">
+    <h2 style="text-align:center;">Resumo</h2>
+    <p>O Projeto Adote um Atleta é uma iniciativa social da academia LACUS Brazilian Jiu-Jitsu, sediada no bairro Santa Lúcia, em Maceió, Alagoas, que conecta apoiadores a crianças e adolescentes em situação de vulnerabilidade social por meio de contribuição recorrente de dez reais mensais no cartão de crédito. Os recursos arrecadados custeiam a mensalidade dos treinos de Jiu-Jitsu, as inscrições e os ingressos em competições, a alimentação e a preparação física e nutricional de cada atleta apadrinhado. Como contrapartida, o atleta deve manter matrícula escolar regular, rendimento acima da média e comportamento exemplar em casa, na escola e nos treinos, requisitos verificados por relatórios escolares semestrais e relatórios familiares mensais. O acompanhamento de saúde é assegurado por parceria com as Unidades Básicas de Saúde do 4º Distrito Sanitário de Maceió, na parte alta da cidade, com a realização de consultas e exames laboratoriais e bioquímicos periódicos. O projeto fundamenta-se em dados oficiais do território e em evidências científicas consolidadas sobre os efeitos das artes marciais na redução da agressividade e no desenvolvimento de competências socioemocionais. Prevê ainda modalidades de financiamento por pessoa jurídica, com contrapartidas de visibilidade de marca e enquadramento na Lei de Incentivo ao Esporte, além de mecanismos formais de registro, prestação de contas e transparência na aplicação integral dos recursos recebidos.</p>
+    <p class="palavras"><strong>Palavras-chave:</strong> jiu-jitsu; projeto social; vulnerabilidade social; desenvolvimento infantojuvenil; apadrinhamento esportivo; Maceió.</p>
+  </div>
+
+  <!-- ================= SUMÁRIO ================= -->
+  <div class="sumario quebra">
+    <h2 style="text-align:center;">Sumário</h2>
+    <div class="item"><span>1 INTRODUÇÃO</span><span class="pts"></span></div>
+    <div class="item"><span>2 JUSTIFICATIVA</span><span class="pts"></span></div>
+    <div class="item"><span>3 OBJETIVOS</span><span class="pts"></span></div>
+    <div class="item"><span>4 PÚBLICO-ALVO E CRITÉRIOS DE SELEÇÃO</span><span class="pts"></span></div>
+    <div class="item"><span>5 METODOLOGIA</span><span class="pts"></span></div>
+    <div class="item"><span>6 FINANCIAMENTO POR PESSOA JURÍDICA E CONTRAPARTIDAS</span><span class="pts"></span></div>
+    <div class="item"><span>7 REGISTRO, GESTÃO DOS RECURSOS E TRANSPARÊNCIA</span><span class="pts"></span></div>
+    <div class="item"><span>8 RESULTADOS ESPERADOS E INDICADORES</span><span class="pts"></span></div>
+    <div class="item"><span>9 FASES DE IMPLANTAÇÃO E SUSTENTABILIDADE</span><span class="pts"></span></div>
+    <div class="item"><span>10 CONSIDERAÇÕES FINAIS</span><span class="pts"></span></div>
+    <div class="item"><span>REFERÊNCIAS</span><span class="pts"></span></div>
+  </div>
+
+  <!-- ================= 1 INTRODUÇÃO ================= -->
+  <h2>1 Introdução</h2>
+  <p>O Projeto Adote um Atleta nasce da convicção de que o esporte, quando praticado com regularidade, disciplina e acompanhamento adequado, é um dos instrumentos mais eficazes de transformação social disponíveis para comunidades em situação de vulnerabilidade. A iniciativa é promovida pela academia LACUS Brazilian Jiu-Jitsu, localizada no bairro Santa Lúcia, na parte alta de Maceió, capital de Alagoas.</p>
+  <p>O modelo é simples e acessível: qualquer pessoa pode apadrinhar a formação de um atleta com uma contribuição recorrente de dez reais mensais no cartão de crédito. O conjunto das contribuições forma um fundo que custeia, para cada criança ou adolescente selecionado, a mensalidade dos treinos de Jiu-Jitsu, as inscrições e os ingressos em competições oficiais, a alimentação e toda a preparação física e nutricional.</p>
+  <p>O projeto não se limita, contudo, à dimensão esportiva. Cada atleta assume, junto com sua família, um compromisso de desenvolvimento que abrange a vida escolar, o convívio familiar e a saúde. A permanência no programa está condicionada à matrícula escolar regular, ao rendimento acima da média, ao comportamento exemplar e ao comparecimento às avaliações de saúde realizadas em parceria com as Unidades Básicas de Saúde do 4º Distrito Sanitário de Maceió.</p>
+  <p>Este documento apresenta o contexto territorial que justifica a iniciativa, a fundamentação científica que sustenta o seu desenho metodológico, os objetivos, a metodologia de execução, as modalidades de financiamento por pessoas físicas e jurídicas com as respectivas contrapartidas, os mecanismos de registro e transparência na aplicação dos recursos e os indicadores de monitoramento e avaliação.</p>
+
+  <!-- ================= 2 JUSTIFICATIVA ================= -->
+  <h2>2 Justificativa</h2>
+
+  <h3>2.1 Contexto territorial: Santa Lúcia, Maceió e Alagoas</h3>
+  <p>O bairro Santa Lúcia, criado pela Lei Municipal nº 4.953, de 6 de janeiro de 2000, situa-se na parte alta de Maceió e abriga aproximadamente 26 mil habitantes, conforme o Censo Demográfico de 2010, referência censitária por bairro mais recente disponível (IBGE, 2010). A região integra o 4º Distrito Sanitário do município e concentra população de baixa renda, com presença de grotas e ocupações em áreas de encosta, características das periferias da parte alta da capital alagoana.</p>
+  <p>O estado de Alagoas apresenta o menor Índice de Desenvolvimento Humano Municipal do Brasil, de 0,631, com cerca de 60% de sua população vulnerável à pobreza e 16,6% em situação de extrema pobreza (PNUD; IPEA; FJP, 2013). Esse quadro socioeconômico repercute diretamente nas condições de vida das famílias do território de abrangência do projeto.</p>
+
+  <h3>2.2 Violência juvenil e violência de gênero</h3>
+  <p>Alagoas figura sistematicamente entre os estados mais violentos do país no Atlas da Violência, publicação do Instituto de Pesquisa Econômica Aplicada em parceria com o Fórum Brasileiro de Segurança Pública. A taxa de homicídios de jovens no estado alcança 82,1 por 100 mil habitantes, a terceira maior do Brasil, e Maceió aparece como a segunda capital com a maior taxa de homicídios, de 45,9 por 100 mil habitantes (IPEA; FBSP, 2025). Em âmbito nacional, jovens de 15 a 29 anos representaram 46,5% das vítimas de homicídio em 2024; entre homens jovens, a taxa chega a 78,0 por 100 mil. O mapa de homicídios de adolescentes elaborado pelo Fundo das Nações Unidas para a Infância posiciona Maceió entre os centros urbanos mais letais do país para essa faixa etária (UNICEF, 2020).</p>
+  <p>A literatura especializada aponta de forma consistente que a evasão escolar, a ausência de oportunidades, a exclusão social e a falta de perspectivas figuram entre os principais fatores que aproximam jovens vulneráveis dos circuitos da violência, seja na condição de vítimas, seja na de autores (LIMA et al., 2014).</p>
+  <p>A dimensão da violência de gênero também integra a justificativa do projeto. O Brasil registrou em 2025 o maior número de feminicídios desde a tipificação do crime, em 2015, com 1.568 mulheres assassinadas por razões de gênero, sendo que oito em cada dez casos foram cometidos por parceiros ou ex-companheiros (FBSP, 2026). Por se tratar de comportamento aprendido e reproduzido entre gerações, a violência de gênero pode ser prevenida de forma estrutural na infância, por meio da formação de meninos e meninas que aprendem, desde cedo, o respeito, o autocontrole e a resolução não violenta de conflitos. Este é um dos objetivos centrais do Adote um Atleta.</p>
+
+  <h3>2.3 Saúde infantojuvenil e obesidade</h3>
+  <p>Dados do Sistema de Vigilância Alimentar e Nutricional do Ministério da Saúde indicam que 33,9% das crianças brasileiras de 5 a 9 anos acompanhadas na Atenção Primária apresentam excesso de peso. Em 2025, o país registrou mais de 1,17 milhão de crianças com obesidade e 783 mil com obesidade grave (BRASIL, 2025; INSTITUTO DESIDERATA, 2025). Na região Nordeste, levantamentos estaduais apontam que cerca de quatro em cada dez crianças avaliadas apresentam sobrepeso ou obesidade. A prática esportiva regular e orientada, combinada com acompanhamento nutricional, é reconhecida como a intervenção de melhor custo-efetividade no enfrentamento desse quadro.</p>
+
+  <h3>2.4 Fundamentação científica</h3>
+  <p>O desenho do projeto apoia-se em um corpo consolidado de evidências acadêmicas. A meta-análise de Harwood, Lavidor e Rassovsky (2017), publicada no periódico Aggression and Violent Behavior, sintetizou estudos realizados com crianças e jovens e identificou efeito significativo da prática de artes marciais na redução de comportamentos agressivos e externalizantes. Programas escolares baseados em artes marciais demonstraram redução de comportamento violento, de quebra de regras e de impulsividade em jovens em situação de risco.</p>
+  <p>Em revisão sistemática com meta-análise em rede publicada no periódico Trauma, Violence, &amp; Abuse, Wang et al. (2026) compararam diferentes modalidades e identificaram que práticas marciais com forte componente pedagógico e disciplinar reduzem significativamente a agressividade. Os autores verificaram, ainda, que a frequência superior a três sessões semanais e a duração de sessões acima de sessenta minutos constituem preditores independentes de eficácia. A grade de treinos do Adote um Atleta foi desenhada em conformidade com esses parâmetros.</p>
+  <p>No campo da proteção social, o relatório Esporte que Protege contra Violências, do Fundo das Nações Unidas para a Infância, e os estudos do Escritório das Nações Unidas sobre Drogas e Crime documentam que programas esportivos estruturados atuam como fator de proteção, ao ocupar o tempo do jovem com atividade supervisionada, criar vínculos comunitários positivos, oferecer adultos de referência e reduzir a exposição a comportamentos de risco, ao uso de drogas e à evasão escolar (UNICEF, 2023; UNODC, 2016). Revisões brasileiras, como a publicada na revista Conexões, da Universidade Estadual de Campinas, confirmam ganhos em autocontrole, respeito a regras, autoestima e competências socioemocionais de crianças praticantes de artes marciais e esportes de combate (REPPOLD FILHO et al., 2022).</p>
+  <p>Por fim, a literatura do campo conhecido como esporte para o desenvolvimento indica que a prática esportiva estruturada favorece o engajamento e o rendimento escolar, ao desenvolver disciplina, persistência, funções executivas e senso de pertencimento, fatores com impacto direto na aprendizagem formal. O condicionamento da permanência no projeto ao desempenho escolar potencializa esse mecanismo.</p>
+
+  <!-- ================= 3 OBJETIVOS ================= -->
+  <h2>3 Objetivos</h2>
+
+  <h3>3.1 Objetivo geral</h3>
+  <p>Promover o desenvolvimento integral, nas dimensões física, mental, educacional e social, de crianças e adolescentes em situação de vulnerabilidade no bairro Santa Lúcia e adjacências, utilizando o Jiu-Jitsu como eixo estruturante, de modo a formar adultos com conduta ética, saúde e vínculos positivos com a família e a comunidade.</p>
+
+  <h3>3.2 Objetivos específicos</h3>
+  <ol type="a">
+    <li>garantir prática esportiva regular, com no mínimo três treinos semanais, a crianças e adolescentes que não teriam acesso a ela;</li>
+    <li>manter a totalidade dos atletas com matrícula escolar regular e rendimento acima da média;</li>
+    <li>prevenir e combater o sobrepeso e a obesidade infantil, com acompanhamento médico e nutricional periódico;</li>
+    <li>reduzir comportamentos agressivos e desenvolver autocontrole, disciplina e respeito;</li>
+    <li>atuar preventivamente contra a violência juvenil, a violência doméstica e o feminicídio, formando meninos e meninas com referências de respeito e de não violência;</li>
+    <li>criar trajetórias esportivas reais, com participação em competições oficiais;</li>
+    <li>fortalecer o vínculo entre família, escola e comunidade no território.</li>
+  </ol>
+
+  <!-- ================= 4 PÚBLICO-ALVO ================= -->
+  <h2>4 Público-alvo e critérios de seleção</h2>
+  <p>O projeto destina-se a crianças e adolescentes residentes no bairro Santa Lúcia e adjacências, na parte alta de Maceió, pertencentes a famílias em situação de vulnerabilidade socioeconômica. A seleção observa os seguintes critérios:</p>
+  <ol type="a">
+    <li>residência no território de abrangência do projeto;</li>
+    <li>situação de vulnerabilidade socioeconômica da família, aferida por renda, inscrição no Cadastro Único para Programas Sociais ou avaliação social;</li>
+    <li>matrícula escolar regular ativa, condição de entrada e de permanência no programa;</li>
+    <li>assinatura do termo de compromisso pelos responsáveis legais.</li>
+  </ol>
+
+  <!-- ================= 5 METODOLOGIA ================= -->
+  <h2>5 Metodologia</h2>
+
+  <h3>5.1 Modelo de financiamento por pessoa física</h3>
+  <p>Pessoas físicas aderem ao projeto com contribuição de dez reais mensais, cobrada de forma recorrente no cartão de crédito. A recorrência garante previsibilidade de receita e o valor reduzido democratiza o apadrinhamento, permitindo que um conjunto de padrinhos e madrinhas sustente cada atleta. O Quadro 1 apresenta os itens custeados.</p>
+  <p class="titulo-tab">Quadro 1 - Itens custeados por atleta apadrinhado</p>
+  <table class="no-break">
+    <tr><th>Item</th><th>Descrição</th></tr>
+    <tr><td>Mensalidade dos treinos</td><td>Acesso integral à grade de treinos infantojuvenil da LACUS, com no mínimo três sessões semanais</td></tr>
+    <tr><td>Competições</td><td>Inscrições, ingressos e logística de participação em campeonatos oficiais</td></tr>
+    <tr><td>Alimentação</td><td>Suporte alimentar vinculado ao plano nutricional do atleta</td></tr>
+    <tr><td>Preparação física</td><td>Acompanhamento de preparação física adequada à idade</td></tr>
+    <tr><td>Preparação nutricional</td><td>Avaliação e plano nutricional periódicos</td></tr>
+    <tr><td>Kimono e equipamentos</td><td>Uniforme e materiais de treino conforme a necessidade</td></tr>
+  </table>
+  <p class="fonte-tab">Fonte: elaboração própria (2026).</p>
+
+  <h3>5.2 Compromisso de desenvolvimento e contrapartidas do atleta</h3>
+  <p>O projeto não tem caráter assistencialista. Trata-se de um pacto de responsabilidade firmado entre o atleta, a família, a escola e a academia. Para permanecer no programa, o atleta deve cumprir os requisitos descritos no Quadro 2.</p>
+  <p class="titulo-tab">Quadro 2 - Requisitos de permanência e instrumentos de verificação</p>
+  <table class="no-break">
+    <tr><th>Dimensão</th><th>Requisito</th><th>Verificação</th><th>Periodicidade</th></tr>
+    <tr><td>Escola</td><td>Matrícula regular, notas acima da média e comportamento exemplar</td><td>Relatório escolar oficial</td><td>Semestral</td></tr>
+    <tr><td>Família</td><td>Comportamento exemplar em casa e respeito aos responsáveis</td><td>Relatório dos pais ou responsáveis</td><td>Mensal</td></tr>
+    <tr><td>Treinos</td><td>Assiduidade, disciplina e respeito a professores e colegas</td><td>Avaliação da equipe técnica da LACUS</td><td>Contínua</td></tr>
+    <tr><td>Saúde</td><td>Comparecimento às avaliações médicas e nutricionais</td><td>Unidades Básicas de Saúde do 4º Distrito Sanitário</td><td>Conforme protocolo</td></tr>
+  </table>
+  <p class="fonte-tab">Fonte: elaboração própria (2026).</p>
+  <p>O atleta que não atender aos requisitos relatados pela escola e pela família ficará temporariamente suspenso das atividades de treino na LACUS, com plano de retorno acordado entre a família, a escola e a equipe do projeto. A suspensão não constitui punição definitiva, mas mecanismo educativo que ensina, desde cedo, que privilégios acompanham responsabilidades. O acompanhamento social da criança é mantido durante o período de suspensão.</p>
+
+  <h3>5.3 Parceria de saúde com o 4º Distrito Sanitário</h3>
+  <p>O projeto mantém parceria com os postos de saúde do 4º Distrito Sanitário de Maceió, que cobre a parte alta da cidade, assegurando a todos os atletas:</p>
+  <ol type="a">
+    <li>avaliação médica periódica e atestado de aptidão para a prática esportiva;</li>
+    <li>exames laboratoriais e bioquímicos de rotina, tais como hemograma, glicemia e perfil lipídico, além de outros exames clinicamente indicados;</li>
+    <li>monitoramento do crescimento, do índice de massa corporal e do estado nutricional, com enfrentamento ativo do sobrepeso e da obesidade infantil;</li>
+    <li>encaminhamentos especializados quando necessário.</li>
+  </ol>
+
+  <!-- ================= 6 PESSOA JURÍDICA ================= -->
+  <h2>6 Financiamento por pessoa jurídica e contrapartidas</h2>
+  <p>Além do apadrinhamento por pessoas físicas, o projeto prevê modalidades de financiamento por pessoas jurídicas, com contrapartidas institucionais proporcionais ao aporte realizado.</p>
+
+  <h3>6.1 Modalidades de apoio empresarial</h3>
+  <p>As empresas poderão apoiar o projeto por meio de cotas de patrocínio, descritas no Quadro 3, cujos valores e quantidades de atletas vinculados serão formalizados em contrato ou termo de patrocínio específico.</p>
+  <p class="titulo-tab">Quadro 3 - Cotas de patrocínio para pessoa jurídica e contrapartidas</p>
+  <table class="no-break">
+    <tr><th>Cota</th><th>Descrição do apoio</th><th>Contrapartidas oferecidas</th></tr>
+    <tr><td>Empresa Madrinha</td><td>Custeio integral de um ou mais atletas por no mínimo doze meses</td><td>Logomarca no kimono dos atletas apoiados, no material de divulgação do projeto e na página do projeto no sítio eletrônico da academia; certificado de empresa apoiadora; menção nas redes sociais</td></tr>
+    <tr><td>Patrocinadora de Competições</td><td>Custeio de inscrições, ingressos e logística de uma temporada de competições</td><td>Logomarca nos uniformes de competição e nas publicações relativas aos campeonatos; relatório fotográfico dos eventos</td></tr>
+    <tr><td>Apoiadora Institucional</td><td>Contribuição mensal recorrente de valor livre, superior à cota de pessoa física</td><td>Selo digital de empresa apoiadora para uso institucional; menção no relatório anual de resultados</td></tr>
+  </table>
+  <p class="fonte-tab">Fonte: elaboração própria (2026).</p>
+  <p>Todas as contrapartidas de visibilidade observarão o Estatuto da Criança e do Adolescente e a Lei Geral de Proteção de Dados Pessoais, sendo vedado qualquer uso de imagem de criança ou adolescente sem autorização expressa dos responsáveis legais.</p>
+
+  <h3>6.2 Incentivo fiscal: Lei de Incentivo ao Esporte</h3>
+  <p>A Lei nº 11.438, de 29 de dezembro de 2006, conhecida como Lei de Incentivo ao Esporte, tornada política pública permanente pela Lei Complementar nº 222, de 2025, permite que pessoas jurídicas tributadas pelo regime de Lucro Real deduzam do Imposto de Renda devido os valores despendidos a título de doação ou patrocínio a projetos desportivos aprovados pelo Ministério do Esporte (BRASIL, 2006; BRASIL, 2025).</p>
+  <p>O limite geral de dedução para pessoas jurídicas é de 2% do imposto devido, percentual que passará a 3% a partir do ano-calendário de 2028. Para projetos voltados à inclusão social por meio do esporte, destinados a comunidades em situação de vulnerabilidade social, hipótese na qual o Adote um Atleta se enquadra, o limite de dedução pode alcançar 4% (BRASIL, 2025).</p>
+  <p>Para viabilizar essa modalidade de captação, o projeto prevê, em sua terceira fase de implantação, a constituição de pessoa jurídica sem fins lucrativos e o cadastramento do proponente e do projeto junto ao Ministério do Esporte, requisitos legais para a captação de recursos incentivados. Enquanto essa habilitação não for concluída, os aportes empresariais ocorrerão na modalidade de patrocínio direto, com as contrapartidas descritas na subseção 6.1, sem benefício fiscal.</p>
+  <p>Cabe registrar que a legislação veda a destinação de recursos incentivados a projetos que beneficiem, direta ou indiretamente, pessoa física ou jurídica vinculada ao doador ou ao patrocinador, vedação que será observada na celebração de todos os instrumentos de apoio.</p>
+
+  <!-- ================= 7 TRANSPARÊNCIA ================= -->
+  <h2>7 Registro, gestão dos recursos e transparência</h2>
+  <p>O projeto será formalmente registrado e adotará mecanismos permanentes de prestação de contas, de modo que todo apoiador, pessoa física ou jurídica, saiba exatamente para onde está indo cada real recebido e onde ele será investido. São compromissos do projeto:</p>
+  <ol type="a">
+    <li>registro formal do projeto, com regulamento próprio, termo de compromisso dos atletas e instrumentos contratuais de patrocínio, e, na terceira fase, constituição de pessoa jurídica sem fins lucrativos com inscrição no Cadastro Nacional da Pessoa Jurídica;</li>
+    <li>manutenção de conta bancária exclusiva para os recursos do projeto, segregada das finanças da academia;</li>
+    <li>processamento das contribuições por plataforma de pagamento recorrente, com emissão de recibo para cada contribuinte;</li>
+    <li>registro contábil de todas as entradas e saídas, com classificação por categoria de despesa, conforme os itens do Quadro 1;</li>
+    <li>publicação de demonstrativo semestral de receitas e despesas, encaminhado a todos os padrinhos, madrinhas e empresas apoiadoras e disponibilizado na página do projeto no sítio eletrônico da academia;</li>
+    <li>publicação de relatório anual de resultados, contendo a aplicação integral dos recursos, os indicadores de desempenho descritos na seção 8 e a evolução dos atletas, com preservação da imagem e dos dados pessoais das crianças e dos adolescentes, conforme o Estatuto da Criança e do Adolescente e a Lei Geral de Proteção de Dados Pessoais;</li>
+    <li>disponibilidade dos documentos comprobatórios de despesa para consulta por qualquer apoiador, mediante solicitação.</li>
+  </ol>
+
+  <!-- ================= 8 RESULTADOS ================= -->
+  <h2>8 Resultados esperados e indicadores</h2>
+  <p>O monitoramento do projeto será realizado por meio dos indicadores apresentados no Quadro 4.</p>
+  <p class="titulo-tab">Quadro 4 - Indicadores de monitoramento e metas</p>
+  <table class="no-break">
+    <tr><th>Indicador</th><th>Meta</th><th>Fonte de verificação</th></tr>
+    <tr><td>Frequência escolar dos atletas</td><td>Igual ou superior a 95%</td><td>Relatórios escolares semestrais</td></tr>
+    <tr><td>Rendimento escolar</td><td>Notas acima da média da turma</td><td>Boletins e relatórios escolares</td></tr>
+    <tr><td>Assiduidade nos treinos</td><td>Igual ou superior a 85%</td><td>Registro de presença da equipe da LACUS</td></tr>
+    <tr><td>Índice de massa corporal na faixa saudável</td><td>Evolução positiva em todos os casos fora da faixa</td><td>Avaliações das Unidades Básicas de Saúde e da nutricionista</td></tr>
+    <tr><td>Exames de saúde em dia</td><td>Totalidade dos atletas</td><td>Protocolo das Unidades Básicas de Saúde do 4º Distrito</td></tr>
+    <tr><td>Ocorrências disciplinares na escola e em casa</td><td>Redução contínua</td><td>Relatórios mensais e semestrais</td></tr>
+    <tr><td>Participação em competições</td><td>No mínimo duas competições por ano por atleta apto</td><td>Registros de inscrição</td></tr>
+    <tr><td>Permanência no programa</td><td>Igual ou superior a 80% ao ano</td><td>Registros administrativos</td></tr>
+  </table>
+  <p class="fonte-tab">Fonte: elaboração própria (2026).</p>
+
+  <!-- ================= 9 FASES ================= -->
+  <h2>9 Fases de implantação e sustentabilidade</h2>
+  <p>O modelo de microcontribuição recorrente foi escolhido por sua resiliência: a perda de um contribuinte individual tem impacto mínimo sobre a receita total, e a base de apoiadores tende a crescer organicamente com a divulgação dos resultados. A implantação está organizada em três fases:</p>
+  <ol type="a">
+    <li>primeira fase, denominada piloto, com a formação da primeira turma de atletas apadrinhados e a consolidação dos fluxos de relatório com as escolas e com as Unidades Básicas de Saúde;</li>
+    <li>segunda fase, com a ampliação do número de vagas conforme o crescimento da base de padrinhos e madrinhas e a captação de patrocínios empresariais diretos, nos termos da seção 6;</li>
+    <li>terceira fase, com a constituição de pessoa jurídica sem fins lucrativos e a habilitação do projeto junto ao Ministério do Esporte, permitindo o acesso a recursos da Lei de Incentivo ao Esporte, a editais públicos e a termos de fomento.</li>
+  </ol>
+
+  <!-- ================= 10 CONSIDERAÇÕES FINAIS ================= -->
+  <h2>10 Considerações finais</h2>
+  <p>O Adote um Atleta propõe uma resposta concreta, mensurável e cientificamente fundamentada aos desafios do território em que se insere. Com uma contribuição mensal acessível a praticamente qualquer pessoa, o projeto articula esporte, escola, família e saúde pública em torno de um único objetivo: formar crianças saudáveis, estudantes dedicados e, no futuro, adultos com conduta ética, capazes de respeitar a família, os colegas e a sociedade, rompendo os ciclos de violência, evasão escolar e adoecimento que marcam a realidade de Alagoas.</p>
+  <p>A combinação entre contrapartidas exigidas dos atletas, acompanhamento intersetorial e transparência integral na aplicação dos recursos confere ao projeto a seriedade necessária para conquistar e manter a confiança de seus apoiadores, sejam eles pessoas físicas ou jurídicas.</p>
+
+  <!-- ================= REFERÊNCIAS ================= -->
+  <div class="referencias">
+    <h2 style="text-align:center;">Referências</h2>
+
+    <p>BRASIL. Lei nº 11.438, de 29 de dezembro de 2006. Dispõe sobre incentivos e benefícios para fomentar as atividades de caráter desportivo. <strong>Diário Oficial da União</strong>: Brasília, DF, 29 dez. 2006.</p>
+
+    <p>BRASIL. Lei Complementar nº 222, de 2025. Torna permanente a Lei de Incentivo ao Esporte e amplia os limites de dedução. <strong>Diário Oficial da União</strong>: Brasília, DF, 2025. Disponível em: https://www.gov.br/esporte/pt-br/acoes-e-programas/lei-de-incentivo-ao-esporte. Acesso em: 10 jun. 2026.</p>
+
+    <p>BRASIL. Ministério da Saúde. <strong>Sistema de Vigilância Alimentar e Nutricional (SISVAN)</strong>: relatórios públicos de estado nutricional. Brasília, DF: Ministério da Saúde, 2025.</p>
+
+    <p>FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA (FBSP). <strong>Retrato dos feminicídios no Brasil</strong>: nota técnica. São Paulo: FBSP, 2026. Disponível em: https://forumseguranca.org.br/wp-content/uploads/2026/03/nota-tecnica-dia-mulher-2026.pdf. Acesso em: 10 jun. 2026.</p>
+
+    <p>HARWOOD, A.; LAVIDOR, M.; RASSOVSKY, Y. Reducing aggression with martial arts: a meta-analysis of child and youth studies. <strong>Aggression and Violent Behavior</strong>, v. 34, p. 96-101, 2017. Disponível em: https://www.sciencedirect.com/science/article/abs/pii/S1359178917300976. Acesso em: 10 jun. 2026.</p>
+
+    <p>INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). <strong>Censo Demográfico 2010</strong>: dados por bairro, Maceió, AL. Rio de Janeiro: IBGE, 2010. Disponível em: https://dados.al.gov.br/catalogo/dataset/bairros-de-alagoas. Acesso em: 10 jun. 2026.</p>
+
+    <p>INSTITUTO DESIDERATA. <strong>Panorama da obesidade em crianças e adolescentes</strong>. Rio de Janeiro: Instituto Desiderata, 2025. Disponível em: https://panorama.obesidadeinfantil.org.br/. Acesso em: 10 jun. 2026.</p>
+
+    <p>INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA); FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA (FBSP). <strong>Atlas da violência</strong>. Brasília, DF: IPEA; FBSP, 2025. Disponível em: https://forumseguranca.org.br/publicacoes/atlas-da-violencia/. Acesso em: 10 jun. 2026.</p>
+
+    <p>LIMA, M. da C. et al. Violência letal em Maceió-AL: estudo descritivo sobre homicídios, 2007-2012. <strong>Epidemiologia e Serviços de Saúde</strong>, Brasília, DF, v. 23, n. 4, p. 731-740, 2014. Disponível em: https://www.scielo.br/j/ress/a/bHhrBhGM3GJPtvf4BPmvtGj/. Acesso em: 10 jun. 2026.</p>
+
+    <p>PROGRAMA DAS NAÇÕES UNIDAS PARA O DESENVOLVIMENTO (PNUD); INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA); FUNDAÇÃO JOÃO PINHEIRO (FJP). <strong>Atlas do desenvolvimento humano no Brasil</strong>. Brasília, DF: PNUD, 2013.</p>
+
+    <p>REPPOLD FILHO, A. R. et al. Artes marciais e esportes de combate como ferramentas promotoras de comportamentos socialmente competentes de crianças: revisão integrativa. <strong>Conexões</strong>, Campinas, SP, 2022. Disponível em: https://periodicos.sbu.unicamp.br/ojs/index.php/conexoes/article/view/8671870. Acesso em: 10 jun. 2026.</p>
+
+    <p>UNICEF. <strong>Esporte que protege contra violências</strong>. Brasília, DF: UNICEF Brasil, 2023. Disponível em: https://www.unicef.org/brazil/relatorios/esporte-que-protege-contra-violencias. Acesso em: 10 jun. 2026.</p>
+
+    <p>UNICEF. <strong>O mapa dos homicídios de adolescentes em Maceió</strong>: Plataforma dos Centros Urbanos 2017-2020. Brasília, DF: UNICEF Brasil, 2020. Disponível em: https://www.unicef.org/brazil/relatorios/plataforma-dos-centros-urbanos-2017-2020/mapa-homicidios-adolescentes-maceio. Acesso em: 10 jun. 2026.</p>
+
+    <p>UNODC. <strong>O poder do esporte na prevenção da delinquência juvenil e do uso de drogas</strong>. Brasília, DF: UNODC, 2016. Disponível em: https://www.unodc.org/lpo-brazil/pt/frontpage/2016/12/03-unodc-e-gdf-iniciam-cooperao-para-prevenir-a-criminalidade-juvenil-e-o-uso-de-drogas-por-meio-do-esporte.html. Acesso em: 10 jun. 2026.</p>
+
+    <p>WANG, X. et al. Effects of martial arts exercise on aggressive behaviors in young people: a systematic review and network meta-analysis. <strong>Trauma, Violence, &amp; Abuse</strong>, 2026. Disponível em: https://journals.sagepub.com/doi/abs/10.1177/15248380261437101. Acesso em: 10 jun. 2026.</p>
+  </div>
+
+</div>
+</body>
+</html>

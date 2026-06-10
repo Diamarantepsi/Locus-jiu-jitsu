@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adote um Atleta | Apresentação | LACUS Brazilian Jiu-Jitsu</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1c1c; --ink-soft: #4a5557;
+    --teal: #006875; --teal-bright: #4bbdd1; --teal-pale: #e3f4f7;
+    --warm: #b07a2a; --warm-pale: #faf1e1;
+    --paper: #fff; --line: #d4dcde;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Hanken Grotesk", sans-serif; color: var(--ink); background: #e8ecee; line-height: 1.6; }
+  .page { max-width: 210mm; margin: 0 auto; background: var(--paper); padding: 16mm 16mm; }
+  @media print { body { background:#fff; } .page { max-width:none; padding:0; } .no-break { page-break-inside: avoid; } }
+  h1,h2,h3 { font-family: "Sora", sans-serif; }
+
+  .hero { background: linear-gradient(135deg, #06343b 0%, #006875 100%); color:#fff; padding: 36px 32px; border-radius: 6px; text-align:center; }
+  .hero .brand { font-weight:800; letter-spacing:.3em; font-size:13px; color:#6fd5e7; }
+  .hero h1 { font-size:38px; font-weight:800; margin:10px 0 6px; letter-spacing:-0.02em; }
+  .hero p { font-size:16px; opacity:.92; max-width:560px; margin:0 auto; }
+  .hero .price { display:inline-block; margin-top:18px; background:#6fd5e7; color:#06343b; font-family:"Sora",sans-serif; font-weight:800; font-size:22px; padding:10px 26px; border-radius:999px; }
+  .hero .price small { font-size:13px; font-weight:600; }
+
+  .section-title { display:flex; align-items:center; gap:10px; margin:34px 0 14px; }
+  .section-title .bar { width:34px; height:4px; background:var(--teal-bright); border-radius:2px; }
+  .section-title h2 { font-size:19px; }
+
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .card { background:var(--teal-pale); border-radius:6px; padding:16px; }
+  .card.warm { background:var(--warm-pale); }
+  .card .icon { font-size:24px; }
+  .card h3 { font-size:14px; margin:6px 0 4px; color:var(--teal); }
+  .card.warm h3 { color:var(--warm); }
+  .card p { font-size:13px; color:var(--ink-soft); }
+
+  .stat { text-align:center; background:#fff; border:1px solid var(--line); border-top:4px solid var(--teal-bright); border-radius:6px; padding:14px 8px; }
+  .stat .n { font-family:"Sora",sans-serif; font-weight:800; font-size:24px; color:var(--teal); }
+  .stat .l { font-size:11px; color:var(--ink-soft); margin-top:3px; line-height:1.35; }
+
+  .flow { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+  .flow .step { background:#fff; border:1.5px solid var(--teal-bright); border-radius:6px; padding:12px 10px; text-align:center; position:relative; }
+  .flow .step .k { font-family:"Sora",sans-serif; font-weight:800; color:var(--teal-bright); font-size:12px; }
+  .flow .step p { font-size:12px; margin-top:4px; }
+
+  .pact { width:100%; border-collapse:collapse; font-size:13px; }
+  .pact th { background:var(--teal); color:#fff; padding:8px 10px; text-align:left; font-family:"Sora",sans-serif; font-size:11px; }
+  .pact td { padding:8px 10px; border-bottom:1px solid var(--line); }
+
+  .cta { margin-top:30px; background:var(--warm-pale); border:2px dashed var(--warm); border-radius:6px; padding:20px 24px; text-align:center; }
+  .cta h2 { font-size:18px; color:var(--warm); margin-bottom:6px; }
+  .cta p { font-size:14px; }
+  .footer { margin-top:24px; text-align:center; font-size:11px; color:var(--ink-soft); }
+  ul.clean { list-style:none; }
+  ul.clean li { font-size:13.5px; padding:5px 0 5px 26px; position:relative; }
+  ul.clean li::before { content:"✔"; position:absolute; left:0; color:var(--teal-bright); font-weight:700; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero no-break">
+    <div class="brand">LACUS BRAZILIAN JIU-JITSU · MACEIÓ/AL</div>
+    <h1>ADOTE UM ATLETA</h1>
+    <p>Com o valor de dois cafés por mês, você tira uma criança da rua, coloca no tatame, mantém na escola e cuida da saúde dela.</p>
+    <div class="price">R$ 10<small>/mês no cartão</small></div>
+  </div>
+
+  <div class="section-title"><span class="bar"></span><h2>Por que Santa Lúcia, Maceió?</h2></div>
+  <div class="grid3 no-break">
+    <div class="stat"><div class="n">0,631</div><div class="l">Alagoas tem o menor IDH do Brasil (PNUD)</div></div>
+    <div class="stat"><div class="n">82,1</div><div class="l">homicídios por 100 mil jovens em AL, a 3ª pior taxa do país (Atlas da Violência)</div></div>
+    <div class="stat"><div class="n">1 em 3</div><div class="l">crianças de 5 a 9 anos no Brasil tem excesso de peso (SISVAN/MS)</div></div>
+  </div>
+  <p style="font-size:13.5px; margin-top:12px; color:var(--ink-soft);">O bairro Santa Lúcia, na parte alta de Maceió, tem cerca de <strong>26 mil moradores</strong> e concentra famílias em vulnerabilidade social. É exatamente onde a ciência diz que o esporte mais protege: estudos e meta-análises internacionais mostram que artes marciais praticadas 3x ou mais por semana <strong>reduzem agressividade, melhoram o autocontrole e o desempenho escolar</strong> de crianças e adolescentes.</p>
+
+  <div class="section-title"><span class="bar"></span><h2>O que seus R$ 10 custeiam</h2></div>
+  <div class="grid3 no-break">
+    <div class="card"><div class="icon">🥋</div><h3>Mensalidade dos treinos</h3><p>Jiu-Jitsu na LACUS, no mínimo 3x por semana, com equipe qualificada.</p></div>
+    <div class="card"><div class="icon">🏆</div><h3>Competições</h3><p>Inscrições, ingressos e logística de campeonatos oficiais.</p></div>
+    <div class="card"><div class="icon">🍎</div><h3>Alimentação e nutrição</h3><p>Suporte alimentar e plano nutricional individual.</p></div>
+    <div class="card"><div class="icon">💪</div><h3>Preparação física</h3><p>Treinamento físico adequado à idade do atleta.</p></div>
+    <div class="card"><div class="icon">🩺</div><h3>Saúde monitorada</h3><p>Parceria com as UBS do 4º Distrito Sanitário (parte alta): consultas, exames laboratoriais e bioquímicos.</p></div>
+    <div class="card"><div class="icon">🥋</div><h3>Kimono e equipamentos</h3><p>Uniforme e material de treino para cada atleta.</p></div>
+  </div>
+
+  <div class="section-title"><span class="bar"></span><h2>O pacto: nada é de graça, tudo é conquistado</h2></div>
+  <p style="font-size:13.5px; margin-bottom:10px;">O atleta apadrinhado assume um <strong>compromisso de desenvolvimento</strong>. Se não cumprir, fica temporariamente suspenso dos treinos até retomar o combinado, porque aqui se aprende que privilégio vem com responsabilidade.</p>
+  <table class="pact no-break">
+    <tr><th>Compromisso</th><th>Quem verifica</th><th>Quando</th></tr>
+    <tr><td>Matrícula regular + notas acima da média + bom comportamento na escola</td><td>Relatório da escola</td><td>A cada 6 meses</td></tr>
+    <tr><td>Comportamento exemplar em casa e respeito aos pais</td><td>Relatório dos pais</td><td>Todo mês</td></tr>
+    <tr><td>Disciplina, assiduidade e respeito no tatame</td><td>Equipe LACUS</td><td>Contínuo</td></tr>
+    <tr><td>Consultas e exames de saúde em dia</td><td>UBS 4º Distrito</td><td>Conforme protocolo</td></tr>
+  </table>
+
+  <div class="section-title"><span class="bar"></span><h2>O que estamos formando</h2></div>
+  <ul class="clean no-break">
+    <li>Crianças saudáveis e ativas, longe da obesidade infantil que já atinge 1 em cada 3 crianças brasileiras;</li>
+    <li>Alunos matriculados, frequentes e com notas acima da média;</li>
+    <li>Jovens com disciplina, autocontrole e respeito, longe da violência que mata 82 jovens a cada 100 mil em Alagoas;</li>
+    <li>Futuros homens e mulheres que respeitam a família, os colegas e a sociedade, quebrando o ciclo da violência doméstica e do feminicídio;</li>
+    <li>Atletas de verdade, competindo em campeonatos oficiais.</li>
+  </ul>
+
+  <div class="section-title"><span class="bar"></span><h2>Sua empresa também pode apoiar</h2></div>
+  <div class="grid3 no-break">
+    <div class="card warm"><div class="icon">🏢</div><h3>Empresa Madrinha</h3><p>Custeia um ou mais atletas por 12 meses e leva a logomarca no kimono, no material do projeto e no site da academia, além de certificado de empresa apoiadora.</p></div>
+    <div class="card warm"><div class="icon">🥇</div><h3>Patrocinadora de Competições</h3><p>Banca a temporada de campeonatos e aparece nos uniformes de competição e nas publicações dos eventos, com relatório fotográfico.</p></div>
+    <div class="card warm"><div class="icon">📋</div><h3>Incentivo fiscal</h3><p>Empresas no Lucro Real poderão deduzir o patrocínio do IRPJ pela Lei de Incentivo ao Esporte (Lei nº 11.438/2006, permanente pela LC nº 222/2025), com limite de até 4% para projetos de inclusão social, após a habilitação do projeto no Ministério do Esporte.</p></div>
+  </div>
+
+  <div class="section-title"><span class="bar"></span><h2>Transparência total</h2></div>
+  <ul class="clean no-break">
+    <li>Projeto formalmente registrado, com regulamento, termos de compromisso e contratos de patrocínio;</li>
+    <li>Conta bancária exclusiva e registro contábil de todas as entradas e saídas;</li>
+    <li>Demonstrativo semestral de receitas e despesas enviado a todos os apoiadores, mostrando para onde foi cada real;</li>
+    <li>Relatório anual público de resultados e comprovantes de despesa disponíveis para consulta de qualquer apoiador.</li>
+  </ul>
+
+  <div class="section-title"><span class="bar"></span><h2>Como apadrinhar</h2></div>
+  <div class="flow no-break">
+    <div class="step"><div class="k">PASSO 1</div><p>Fale com a LACUS pelo WhatsApp</p></div>
+    <div class="step"><div class="k">PASSO 2</div><p>Cadastre a contribuição de R$ 10/mês no cartão</p></div>
+    <div class="step"><div class="k">PASSO 3</div><p>Acompanhe a evolução dos atletas em relatórios semestrais</p></div>
+    <div class="step"><div class="k">PASSO 4</div><p>Veja seu investimento virar medalha, boletim e futuro</p></div>
+  </div>
+
+  <div class="cta no-break">
+    <h2>R$ 10 por mês. Menos que dois cafés. Um futuro inteiro.</h2>
+    <p><strong>WhatsApp: +55 82 99692-5204</strong> · LACUS Brazilian Jiu-Jitsu · Santa Lúcia, Maceió/AL</p>
+  </div>
+
+  <div class="footer">
+    Fontes: Atlas da Violência (IPEA/FBSP) · PNUD/IDHM · SISVAN/Ministério da Saúde · UNICEF Brasil · Harwood et al. (2017), Aggression and Violent Behavior · Wang et al. (2026), Trauma, Violence &amp; Abuse · IBGE.<br/>
+    O documento institucional completo, com metodologia, indicadores e referências, está disponível mediante solicitação.
+  </div>
+</div>
+</body>
+</html>
